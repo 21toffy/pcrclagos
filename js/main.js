@@ -94,15 +94,17 @@
 
 
 
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myList li").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
-
+$("#populerNameKey").on('keyup', function(){
+var value = $(this).val().toLowerCase();
+$("#destPopuler li").each(function () {
+    if ($(this).text().toLowerCase().search(value) > -1) {
+        $(this).show();
+        $(this).prev('.country').last().show();
+    } else {
+        $(this).hide();
+    }
+});   
+})
 
 
      $(document).ready(function () {  

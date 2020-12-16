@@ -525,7 +525,8 @@ ol {
 .services-item {
 	text-align: center;
 	padding: 10px 10px 18px 10px;
-	background: #ffffff;
+	background: #21759b;
+
 	-webkit-box-shadow: 0px 10px 25px rgba(206, 206, 206, 0.5);
 	box-shadow: 0px 10px 25px rgba(206, 206, 206, 0.5);
 	margin-bottom: 30px;
@@ -537,7 +538,15 @@ ol {
 }
 
 .services-item h3 {
-	color: #191039;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+
+.services-item p {
+	color: #fff;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 10px;
@@ -781,7 +790,10 @@ ol {
 
 .footer-section {
 	background: #003154;
-	padding-top: 70px;
+	padding-top: 30px;
+	color: #fff;
+	font-weight: bolder;
+	text-align: center;
 }
 
 .fs-about {
@@ -2981,7 +2993,211 @@ img{
 	color: #ffff;
 	padding: 0 0 40px 0;
 }
+.icondiv{
+      border:1px solid;
+      background-image: url(img/socials/WhatsApp-Image-2019-09-20-at-14.34.501-217x300.jpeg) 100% 100%;
+   }
+
+
+.whit{
+color: #fff;
+}
 
 
 
 
+.color{
+	padding: 20px 30px 30px 30px;
+	background-color: #f5f5f5;
+
+}
+
+.rem{
+	background-color: #fff;
+	padding-bottom: 40px 
+}
+
+
+.aboutclass{
+	padding: 90px 0 0 30px;
+	text-align: left;
+}
+
+.saboutclass{
+	padding: 0px 0 0 30px;
+}
+
+.boarde{
+ 	/*border:1px solid red;*/
+ 	background-color: #fff;
+ 	height: 300px;
+ 	/*margin: 0 0 0 -30px;*/
+}
+
+.padd1{
+	/*padding:20px;*/
+	background-color: #fff;
+		-webkit-box-shadow: 0px 5px 25px rgba(170, 170, 170, 0.1);
+	box-shadow: 0px 5px 25px rgba(170, 170, 170, 0.1);
+	margin: 0 0 10px 0px;
+	height: 300px;
+	/*margin: 10px 0 0 10px;*/
+}
+
+
+
+
+	.post-container {
+    margin: 20px 20px 0 0;  
+    /*border: 5px solid #333;*/
+    overflow: auto
+}
+.post-thumb {
+    float: left
+}
+.post-thumb img {
+    display: block
+}
+.post-content {
+    margin-left: 210px
+}
+.post-title {
+    font-weight: bold;
+    font-size: 200%;
+    padding: 9px;
+    /*background: #ccc*/
+}
+
+.shad{
+	-webkit-box-shadow: 0px 5px 25px rgba(170, 170, 170, 0.1);
+	box-shadow: 0px 5px 25px rgba(170, 170, 170, 0.1);
+	padding: 30px 0 20px 30px;
+	background-color: #fff;
+	/*padding: 5px; */
+}
+
+
+
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: px;
+  font-size: 30px;
+}
+.free{
+	background-color: #fff;
+	height: 410px;
+	padding: 60px 40px 0px 40px;
+}
+
+
+/*.imgWrap{
+    display:inline-block;
+    background:#000;
+    position:relative;
+    padding: 0.1px 0.1px  1px 0.1px;
+    height: 410px;
+}
+
+.imgWrap > img{ display:block; opacity:.5; }
+.imgWrap > span{ position:absolute; display:table; text-align:center; z-index:1; height:100%; left:0; right:0; padding:20px; color:#FFF; font-size:1em; }
+.imgWrap > span::after{ content:attr(data-title); display:table-cell; vertical-align: middle; }*/
+
+
+
+.wrap {
+  width: 100%;
+  background: #000 none repeat scroll 0% 0%;
+}
+.image {
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("src="https://cdn.autojosh.com/wp-content/uploads/2018/03/Nigeria-Police-Officers.jpgsrc="https://cdn.autojosh.com/wp-content/uploads/2018/03/Nigeria-Police-Officers.jpg");
+  background-size: cover;
+  height: 100vh;
+  max-height: 350px;
+  min-height: 200px;
+}
+.text {
+  color: #FFF;
+  font-weight: 900;
+}
+
+
+.mainJumbotron {
+        position: relative;
+        margin: 0px;
+        height: 420px;
+    /*    width:100%;
+height:100%;*/
+        
+        text-align: center;
+        background-image: url("../img/socials/Nigeria-Police.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .mainJumbotron:before {
+      content: "";
+      background: black;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: .4;
+      z-index:1;
+    }
+    
+    .mainJumbotron > * {
+        position:relative;
+        z-index:2;
+    }
+    .myp {
+    	padding-top: 150px;
+      color: white;
+      position:relative;
+      z-index:2;
+      font-weight: bolder;
+    }
+
+ .socials{
+ 	width: 30px;
+ 	height: 30px;
+ }
+
+
+ .book-now-btn2 {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #162541;
+    color: #162541;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 5px 12px;
+    text-transform: uppercase;
+        margin: 5px 0px 12px 30px;
+
+}
+.book-now-btn2:hover, .vacation-offer-details .btn.btn-default:hover{
+    background: #162541;
+}
+ /*   border: 1px solid;
+    display: inline-block;
+    padding: 6px 8px;
+    text-transform: uppercase;
+    border-radius: 0;
+}*/
+
+
+.about-right{
+	margin:100px;
+	/*background-color: pink;*/
+
+}
+.who{
+	color: #003154;
+}
