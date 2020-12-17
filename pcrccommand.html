@@ -22,6 +22,25 @@
         <script src="js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
         <script src="js/instafeed.min.js" type="text/javascript"></script>
         <script src="js/custom.js" type="text/javascript"></script>
+
+         <script>
+function myFunction() {
+    var input, filter, cards, cardContainer, h5, title, li, i;
+    input = document.getElementById("myFilter");
+    filter = input.value.toUpperCase();
+    cardContainer = document.getElementById("myItems");
+    cards = cardContainer.getElementsByClassName("card");
+    for (i = 0; i < cards.length; i++) {
+        title = cards[i].querySelector(".card-body h5.card-title");
+        if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = "";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+}
+</script>
+
     </head>
 
 
@@ -31,7 +50,7 @@
  <!-- Fixed navbar -->
 
 
-    <header class="header-section">
+       <header class="header-section">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
@@ -43,10 +62,7 @@
                     <nav class="nav-menu mobile-menu">
                         <ul>
                             <li class="active"><a href="./index.html">Home</a></li>
-                            <li><a href="./blog.html">News & Media </a></li>
-                            <li><a href="./contact.html">Report Crime</a></li>
-                             <li><a href="./register.html">Join US</a></li>
-                            
+
                             <li><a href="#">About</a>
                                 <ul class="dropdown">
                                     <li><a href="./aboutpolice.html">About The Police</a></li>
@@ -54,7 +70,6 @@
                                     <li><a href="./Lagosexco.html">Lagos PCRC  Exco</a></li>
                                 </ul>
                             </li>
-
                             <li><a href="#">Our Structure</a>
                                 <ul class="dropdown">
                                     <ul class="dropdown">
@@ -65,6 +80,15 @@
                                 </ul>
                                 </ul>
                             </li>
+                             <li><a href="./register.html">Join US</a></li>
+                             <li><a href="./contact.html">Report Crime</a></li>
+
+                            <li><a href="./blog.html">News & Media </a></li>
+                            
+                            
+                            
+
+                            
 
                         </ul>
                     </nav>
@@ -75,162 +99,173 @@
         </div>
     </header>
 
-
-
-
-
-
-
-
-
-
-
-            <div class="clearfix"></div>
-            <div class="clearfix"></div>
-
-
-            <section class="about-block">
+     <section class="about-block">
                 <div class="container">
                     <div class="row">
-
-                        <div class="col-md-7 about-right">
-                            <article>
-           
-                
-                <div class="content">
-<p>We are structured along police formations such as Divisions, Area commands, State commands, and Zonal commands up to National components. </p>
-
-
-<h3><em>PCRC Area Commands and their respective Divisions</em></h3>
-
-
-
-<pre class="wp-block-verse">(<em>Click on any Area / Division name to view their executives.</em>)<div></div></pre>
-
-
-
-<ul><li><strong><em>Area A- Lagos Island: </em></strong><ol><li>DOLPHIN DIVISION</li><li>EBUTE-ERO DIVISION</li><li>ONIKAN DIVISION</li><li>BAR BEACH DIVISION</li><li>LION BUILDING DIVISION</li><li>VICTORIA ISLAND DIVISION</li><li>ADENIJI ADELE </li></ol></li></ul>
-
-
-
-<ul><li><strong><em>Area B-Apapa:</em></strong><ol><li>LAYENI DIVISION</li><li>KIRIKIRI DIVISION</li><li>IJORA BADIA DIVISION</li><li>TRINITY DIVISION </li></ol></li></ul>
-
-
-
-<ul><li><strong><em> Area C-Surulere: </em></strong><ol><li>BODE THOMAS</li><li>SURULERE DIVISION</li><li>SABO DIVISION</li><li>AGUDA DIVISION</li><li>IPONRI DIVISION</li><li>YABA DIVISION   </li><li>ORILE DIVISION Chairman – Otunba Wasiu Ajao 08033060458</li></ol></li></ul>
-
-
-
-<ul><li><strong><em>Area D-Mushin:</em></strong>  Chairman –&nbsp; Alh. Rauf. Ajibaye 09090887566/ 08037118489 <ol><li> <a rel="noreferrer noopener" href="http://pcrclagosstate.org/wp-content/uploads/2019/09/PCRC-EJIGBO-EXCO-real.pdf" target="_blank">EJIGBO DIVISION </a> :Chairman – Mr Kolapo&nbsp; Ayinde Eludipo 080331997o4</li><li> ILASAMAJA DIVISION</li><li>ALAKARA DIVISION: Chairman – Mr. Rotimi. O. Shotunde 08023812190</li><li>ISOLO DIVISION:  Chairman – Engr. Jacob Ogungbe 07025791707</li><li>MUSHIN DIVISION:  Chairman – Alhaji Abiodun Taiwo 08037201037 /0802961724</li><li>ASWANI DIVISION: Chairman – Hon. Adegboyega Adeleke 08060006680</li><li>ITIRE DIVISION:  Chairman – Alhaji Lateef Folawewo 08053354027 /08033658343</li><li>IJESHATEDO DIVISION</li><li>AGO OKOTA DIVISION: Chairman -Alhaji.Musibau Akonbi Alebiosu 08033218902 </li></ol></li></ul>
-
-
-
-<ul><li><strong><em>Area E-Festac: </em></strong>CHAIRMAN – Chairman – Alhaji Cheif S.B Ogunlana <ol><li> FESTAC DIVISION .</li><li> SATELLITE DIVISION </li><li> ONIREKE DIVISION: Chairman – Chejf John O. Etaware&nbsp; 08033442208&nbsp;  </li><li> TRADE FAIR DIVISION </li><li> OJO DIVISION </li><li> OKOKOMAIKO DIVISION </li><li> IBA DIVISION </li></ol></li></ul>
-
-
-
-<ul><li><strong><em>Area F-Ikeja:</em></strong><ol><li> MAKINDE DIVISION </li><li> AKINPELU DIVISION: Chairman – Alhaji R. A. Awosanya </li><li> MAN CENTRE DIVISION </li><li> OJODU DIVISION </li><li> SHOGUNLE DIVISION:  Chairman – Rev. Agbakwuru O. G Kelvin </li><li> ILUPEJU DIVISION </li><li> IKEJA DIVISION: Chairman – Chief I. O. Odeniran,  </li><li> MOSAFEJO DIVISION :  Chairman- Elder Samson Fadoyin 08086849020. </li></ol></li></ul>
-
-
-
-<ul><li><a rel="noreferrer noopener" href="http://pcrclagosstate.org/wp-content/uploads/2019/09/AREA-G-COMMAND.pdf" target="_blank"><strong>Area G-Ogba:  Chairman – Elder David Adetomiwa </strong></a><ol><li> ABATTOIR DIVISION </li><li> ALAKUKO DIVISION </li><li> ELERE DIVISION </li><li> DOPEMU DIVISION </li><li> ISOKOLO DIVISION </li><li> IJU DIVISION </li><li> OJOKORO DIVISION </li><li> DIRCT MEMBER DIVISION </li><li> PEN CINEMA DIVISION </li></ol></li></ul>
-
-
-
-<ul><li><strong><em>Area H-Ogudu:</em></strong><ol><li> ANTHONY DIVISION:  Chairman – Oluwole Laniyan, 08143141387 </li><li> SOMOLU/PEDRO DIVISION </li><li> IFAKO DIVISION </li><li> OGUDU DIVISION </li><li>ISHERI DIVISION: Chairman – Pastor J. A. Akande 08023372893</li></ol></li><li><strong><em>Area J-Ajah/Elemoro:</em></strong> Chairman – Chief Yisa Shamba Elemoro&nbsp; 08033028472.<ol><li> ELEMORO DIVISION </li><li> AJAH DIVISION: Chairman&nbsp; Mr Alinta Boniface Igbwebuike 08033094039 </li><li> OGOMBO DIVISION </li><li> EPE DIVISION </li><li> LANGBASA DIVISION </li><li> MAROKO DIVISION: Chairman – Rev. Augustine E. Akpan 08034471180 </li><li> AKODO DIVISION: Chairman – Alh Luqman Balogun 08033702230 </li><li> ILASAN DIVISION </li></ol></li><li><strong><em>Area K-Morogbo:</em></strong><ol><li> ISASHI DIVISION </li><li> ILEMBA DIVISION </li><li> IJANIKIN DIVISION </li><li> MOROGBO DIVISION .</li><li> SEME DIVISION </li><li> BADAGRY DIVISION:  Chairman – Otunba  Adisa Osiefa</li></ol></li><li><strong>Area L-Ilashe:</strong></li><li><strong>Area M-Idimu:</strong><ol><li>IKOTUN DIVISION: Chairman – Hon. Dr. Ademola S. Adesina </li><li>SHASHA DIVISION: Chairman – Alhaji L.A.O. Jinadu, 08037155650</li><li>IGANDO DIVISION Chairman – Elder J.A. Alabi, 08085454565</li></ol></li><li><strong><a rel="noreferrer noopener" href="http://pcrclagosstate.org/wp-content/uploads/2019/09/Area-N-executives.pdf" target="_blank">Area N-Ijede/Ikorodu:&nbsp;Chairman -Alhaji Sulaimon Ogidi</a></strong>  08025300001, 08095300001.<ol><li><a rel="noreferrer noopener" aria-label="Ikorodu Division (opens in a new tab)" href="http://pcrclagosstate.org/wp-content/uploads/2019/09/ikd-exe.pdf" target="_blank">Ikorodu Division</a>:  Chairman – Alhaji Wahab Ganiu 08055133647</li><li><a rel="noreferrer noopener" href="http://pcrclagosstate.org/wp-content/uploads/2019/09/Imota-Exco.pdf" target="_blank">Imota Division</a>: Chairman – Sir John Oluwole 08034511460</li><li>Ijede Division: Chairman – Prince Ademola Adesanya 08066503686</li><li><a rel="noreferrer noopener" href="http://pcrclagosstate.org/wp-content/uploads/2019/09/owutu-exco.pdf" target="_blank">Owutu Division</a>: Chairman – Rev. Joshua Aina jp 08023241270</li><li>Sagamu road Division: Chairman – Otunba Kunle Onafeko( gcpmc) 08034732867</li><li>Ipakodo Division: Chairman – Adekunle Lamikanra 08037090559</li><li>Owode Onirin Division: Chairman – Adebisi Adeniyi O. 08027978036/08053365178.</li><li>Agbowa Division: Chairman – Pastor Godwin 08028611455</li></ol></li><li><strong>Area P-Alagbsdo/Abesan Estate Gate:</strong><ol><li> AYOBO DIVISION </li><li> MEIRA DIVISION </li><li> OKE ODO DIVISION </li></ol></li></ul>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-<a class="synved-social-button synved-social-button-follow synved-social-size-48 synved-social-resolution-single synved-social-provider-facebook nolightbox" data-provider="facebook" target="_blank" rel="nofollow" title="Follow us on Facebook" href="https://web.facebook.com/pcrc_lagos_state-499817500766446/" style="font-size: 0px; width:48px;height:48px;margin:0;margin-bottom:5px;margin-right:5px;"><img alt="Facebook" title="Follow us on Facebook" class="synved-share-image synved-social-image synved-social-image-follow" style="display: inline; width:48px;height:48px; margin: 0; padding: 0; border: none; box-shadow: none;" src="https://pcrclagosstate.org/wp-content/plugins/social-media-feather/synved-social/addons/extra-icons/image/social/wheel/96x96/facebook.png" width="48" height="48"></a><a class="synved-social-button synved-social-button-follow synved-social-size-48 synved-social-resolution-single synved-social-provider-twitter nolightbox" data-provider="twitter" target="_blank" rel="nofollow" title="Follow us on Twitter" href="https://twitter.com/LagosPcrc" style="font-size: 0px; width:48px;height:48px;margin:0;margin-bottom:5px;margin-right:5px;"><img alt="twitter" title="Follow us on Twitter" class="synved-share-image synved-social-image synved-social-image-follow" style="display: inline; width:48px;height:48px; margin: 0; padding: 0; border: none; box-shadow: none;" src="https://pcrclagosstate.org/wp-content/plugins/social-media-feather/synved-social/addons/extra-icons/image/social/wheel/96x96/twitter.png" width="48" height="48"></a><a class="synved-social-button synved-social-button-follow synved-social-size-48 synved-social-resolution-single synved-social-provider-youtube nolightbox" data-provider="youtube" target="_blank" rel="nofollow" title="Find us on YouTube" href="https://www.youtube.com/channel/UCtRJJPC7Cba56Flpu5VEC4A?view_as=subscriber" style="font-size: 0px; width:48px;height:48px;margin:0;margin-bottom:5px;margin-right:5px;"><img alt="youtube" title="Find us on YouTube" class="synved-share-image synved-social-image synved-social-image-follow" style="display: inline; width:48px;height:48px; margin: 0; padding: 0; border: none; box-shadow: none;" src="https://pcrclagosstate.org/wp-content/plugins/social-media-feather/synved-social/addons/extra-icons/image/social/wheel/96x96/youtube.png" width="48" height="48"></a><a class="synved-social-button synved-social-button-follow synved-social-size-48 synved-social-resolution-single synved-social-provider-instagram nolightbox" data-provider="instagram" target="_blank" rel="nofollow" title="Check out our instagram feed" href="https://www.instagram.com/pcrc_lagos_state/" style="font-size: 0px; width:48px;height:48px;margin:0;margin-bottom:5px;"><img alt="instagram" title="Check out our instagram feed" class="synved-share-image synved-social-image synved-social-image-follow" style="display: inline; width:48px;height:48px; margin: 0; padding: 0; border: none; box-shadow: none;" src="https://pcrclagosstate.org/wp-content/plugins/social-media-feather/synved-social/addons/extra-icons/image/social/wheel/96x96/instagram.png" width="48" height="48"></a></div>
-                        
+                        <div class="col-md-4 " >
+
+                            <img class="img-responsive" style="width: 100%; height: 400px; background-repeat: no-repeat;" src="img/socials/Nigerian-police.jpg";  >
+                        </div>
+
+
+                        <div class=" col-md-8 ">
+                            <h6 class="who"> We are structured along police formations such as Divisions, Area commands, State commands, and Zonal commands up to National components. 
+                            </h6>
+                            <br>
+
+                          <h3><em>PCRC Area Commands and their respective Divisions</em></h3>
+                          <pre class="wp-block-verse">(<em>search on any Area / Division name to view their executives.</em>)<div></div></pre>
+
+
+
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-12 mb-3">
+                                <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for names..">
+                              </div>
+                            </div>
+                            <div class="row" id="myItems">
+                              <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Area A- Lagos Island:</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                    <p class="card-text"><ol><li>DOLPHIN DIVISION</li><li>EBUTE-ERO DIVISION</li><li>ONIKAN DIVISION</li><li>BAR BEACH DIVISION</li><li>LION BUILDING DIVISION</li><li>VICTORIA ISLAND DIVISION</li><li>ADENIJI ADELE </li></ol></p>
+                                  </div>
+                                </div>
+
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title"> Area B-Apapa:</h5>
+                                    <h5 class="card-title">2. LAYENI DIVISION</h5>
+                                    <h5 class="card-title">3. KIRIKIRI DIVISION</h5>
+                                    <h5 class="card-title">4. JORA BADIA DIVISION</h5>
+                                    <h5 class="card-title">5. TRINITY DIVISION</h5>
+                                    <p class="card-text"> </p>
+                                  </div>
+                                </div>
+
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Area C-Surulere:</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"> </h6>
+                                    <p class="card-text ml-5"><ol><li>BODE THOMAS</li><li>SURULERE DIVISION</li><li>SABO DIVISION</li><li>AGUDA DIVISION</li><li>IPONRI DIVISION</li><li>YABA DIVISION   </li><li>ORILE DIVISION Chairman – Otunba Wasiu Ajao 08033060458</li></ol></p>
+                                  </div>
+                                </div>
+
+
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Area D-Mushin: Chairman –&nbsp; Alh. Rauf. Ajibaye 09090887566/ 08037118489 </h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"> </h6>
+                                    <p class="card-text"><ol><li>EJIGBO DIVISION :Chairman – Mr Kolapo&nbsp; Ayinde Eludipo 080331997o4</li><li> ILASAMAJA DIVISION</li><li>ALAKARA DIVISION: Chairman – Mr. Rotimi. O. Shotunde 08023812190</li><li>ISOLO DIVISION:  Chairman – Engr. Jacob Ogungbe 07025791707</li><li>MUSHIN DIVISION:  Chairman – Alhaji Abiodun Taiwo 08037201037 /0802961724</li><li>ASWANI DIVISION: Chairman – Hon. Adegboyega Adeleke 08060006680</li><li>ITIRE DIVISION:  Chairman – Alhaji Lateef Folawewo 08053354027 /08033658343</li><li>IJESHATEDO DIVISION</li><li>AGO OKOTA DIVISION: Chairman -Alhaji.Musibau Akonbi Alebiosu 08033218902 </li></ol></p>
+                                  </div>
+                                </div>
+
+
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title"><strong><em>Area E-Festac: </em></strong>CHAIRMAN – Chairman – Alhaji Cheif S.B Ogunlana</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                    <p class="card-text"><ol><li> FESTAC DIVISION .</li><li> SATELLITE DIVISION </li><li> ONIREKE DIVISION: Chairman – Chejf John O. Etaware&nbsp; 08033442208&nbsp;  </li><li> TRADE FAIR DIVISION </li><li> OJO DIVISION </li><li> OKOKOMAIKO DIVISION </li><li> IBA DIVISION </li></ol></p>
+                                  </div>
+                                </div>
+
+
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title"><strong><em>Area F-Ikeja:</em></strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"> </h6>
+                                    <p class="card-text"><ol><li> MAKINDE DIVISION </li><li> AKINPELU DIVISION: Chairman – Alhaji R. A. Awosanya </li><li> MAN CENTRE DIVISION </li><li> OJODU DIVISION </li><li> SHOGUNLE DIVISION:  Chairman – Rev. Agbakwuru O. G Kelvin </li><li> ILUPEJU DIVISION </li><li> IKEJA DIVISION: Chairman – Chief I. O. Odeniran,  </li><li> MOSAFEJO DIVISION :  Chairman- Elder Samson Fadoyin 08086849020. </li></ol></p>
+                                  </div>
+                                </div>
+
+
+
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title"><strong>Area G-Ogba:  Chairman – Elder David Adetomiwa </strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"> </h6>
+                                    <p class="card-text"><ol><li> ABATTOIR DIVISION </li><li> ALAKUKO DIVISION </li><li> ELERE DIVISION </li><li> DOPEMU DIVISION </li><li> ISOKOLO DIVISION </li><li> IJU DIVISION </li><li> OJOKORO DIVISION </li><li> DIRCT MEMBER DIVISION </li><li> PEN CINEMA DIVISION </li></ol></p>
+                                  </div>
+                                </div>
+
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title"><strong><em>Area H-Ogudu:</em></strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"> </h6>
+                                    <p class="card-text"> <ol><li> ANTHONY DIVISION:  Chairman – Oluwole Laniyan, 08143141387 </li><li> SOMOLU/PEDRO DIVISION </li><li> IFAKO DIVISION </li><li> OGUDU DIVISION </li><li>ISHERI DIVISION: Chairman – Pastor J. A. Akande 08023372893</li></ol></p>
+                                  </div>
+                                </div>
+
+
+
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title"><strong><em>Area J-Ajah/Elemoro: Chairman – Chief Yisa Shamba Elemoro&nbsp; 08033028472.</em></strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"> </h6>
+                                    <p class="card-text"><ol><li> ELEMORO DIVISION </li><li> AJAH DIVISION: Chairman&nbsp; Mr Alinta Boniface Igbwebuike 08033094039 </li><li> OGOMBO DIVISION </li><li> EPE DIVISION </li><li> LANGBASA DIVISION </li><li> MAROKO DIVISION: Chairman – Rev. Augustine E. Akpan 08034471180 </li><li> AKODO DIVISION: Chairman – Alh Luqman Balogun 08033702230 </li><li> ILASAN DIVISION </li></ol></p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title"><strong><em>Area K-Morogbo:</em></strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"> </h6>
+                                    <p class="card-text"> <ol><li> ISASHI DIVISION </li><li> ILEMBA DIVISION </li><li> IJANIKIN DIVISION </li><li> MOROGBO DIVISION .</li><li> SEME DIVISION </li><li> BADAGRY DIVISION:  Chairman – Otunba  Adisa Osiefa</li></ol></p>
+                                  </div>
+                                </div>
+
+                              <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title"><strong>Area L-Ilashe:</strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"> </h6>
+                                    <p class="card-text"><ol><li>IKOTUN DIVISION: Chairman – Hon. Dr. Ademola S. Adesina </li><li>SHASHA DIVISION: Chairman – Alhaji L.A.O. Jinadu, 08037155650</li><li>IGANDO DIVISION Chairman – Elder J.A. Alabi, 08085454565</li></ol></p>
+                                  </div>
+                                </div>
+
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title"><strong>Area M-Idimu:</strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"> </h6>
+                                    <p class="card-text"> </p>
+                                  </div>
+                                </div>
+
+
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title"><strong>Area N-Ijede/Ikorodu:&nbsp;Chairman -Alhaji Sulaimon Ogidi 08025300001, 08095300001.</strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"> </h6>
+                                    <p class="card-text"><ol><li>Ikorodu Division:  Chairman – Alhaji Wahab Ganiu 08055133647</li><li>Imota Division: Chairman – Sir John Oluwole 08034511460</li><li>Ijede Division: Chairman – Prince Ademola Adesanya 08066503686</li><li>Owutu Division: Chairman – Rev. Joshua Aina jp 08023241270</li><li>Sagamu road Division: Chairman – Otunba Kunle Onafeko( gcpmc) 08034732867</li><li>Ipakodo Division: Chairman – Adekunle Lamikanra 08037090559</li><li>Owode Onirin Division: Chairman – Adebisi Adeniyi O. 08027978036/08053365178.</li><li>Agbowa Division: Chairman – Pastor Godwin 08028611455</li></ol></p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title"><strong>Area P-Alagbsdo/Abesan Estate Gate:</strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"> </h6>
+                                    <p class="card-text"><ol><li> AYOBO DIVISION </li><li> MEIRA DIVISION </li><li> OKE ODO DIVISION </li></ol></p>
+                                  </div>
+                                </div>
                                 
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                  </div>
+    </section>
+
+         
+
+
+
+
+
+
+
+
                             
-           </article>
+           <<!-- /article>
                             <h1 class="who">Get in touch</h1>
                             <br>
                     
@@ -290,7 +325,7 @@
 
             <ul>
             <!-- <li id="text-2" class="widget widget_text"><h2 class="widgettitle">HOT LINES</h2> -->
-                <h1 class="who">Hot Lines</h1>
+               <!--  <h1 class="who">Hot Lines</h1>
             <div class="textwidget"><div dir="auto">This are the Emergency Numbers in case of the persistent Robberies we are hearing. The police are ready to swing into action.</div>
         <div dir="auto"></div><br>
 
@@ -598,84 +633,11 @@
                     </div>
                     <div class="clearfix"> </div>
                 </div>
-            </section>
+            </section> --> 
 
             
 
             <!---footer--->
-            <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6 col-xs-12 width-set-50">
-                            <div class="footer-details">
-                                <ul class="list-unstyled footer-contact-list">
-                                    <li>
-                                        <i class="fa fa-map-marker fa-lg"></i>
-                                        <p>701 Old York Drive Richmond USA.</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-phone fa-lg"></i>
-                                        <p><a href="tel:+1-202-555-0100"> +1-202-555-0100</a></p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-envelope-o fa-lg"></i>
-                                        <p><a href="mailto:demo@info.com"> demo@info.com</a></p>
-                                    </li>
-                                </ul>
-                                <div class="footer-social-icon">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>                           
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#"><i class="fa fa-youtube-play"></i></a>
-                                </div>
-                                <div class="input-group" id="subscribe">
-                                    <input type="text" class="form-control subscribe-box" value="" name="subscribe" placeholder="EMAIL ID">
-                                    <span class="input-group-btn">
-                                        <button type="button" class="btn subscribe-button"><i class="fa fa-paper-plane fa-lg"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12 width-50 width-set-50">
-                            <div class="footer-details">
-                                <h4>explore</h4>
-                                <ul class="list-unstyled footer-links">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li class="active"><a>About</a></li>
-                                    <li><a href="rooms.html">Rooms</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                    <li><a href="#">Dinning</a></li>
-                                    <li> <a href="news.html">News</a></li>
-                                    <li> <a href="contact.html">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-                            <div class="footer-details">
-                                <h4>Now On Instagram</h4>
-                                <div class="row">
-                                    <div class="instagram-images">
-                                        <div id="instafeed"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="copyright">
-                        &copy; 2017 All right reserved. Designed by <a href="http://www.themevault.net/" target="_blank">ThemeVault.</a>
-                    </div>
-
-                </div>
-            </footer>
-
-            <!--back to top--->
-            <a style="display: none;" href="javascript:void(0);" class="scrollTop back-to-top" id="back-to-top">
-                <span><i aria-hidden="true" class="fa fa-angle-up fa-lg"></i></span>
-                <span>Top</span>
-            </a>
-
-        </div>
+          
     </body>
 </html>
