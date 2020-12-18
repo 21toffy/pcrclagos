@@ -1,3 +1,4 @@
+
 /******************************************************************
   Template Name: Phozogy
   Description:  Phozogy photography HTML Template
@@ -1335,8 +1336,8 @@ ol {
   Portfolio Hero
 -----------------------*/
 
-.portfolio-hero-section {
-	height: 900px;
+.hero-section {
+	height: 200px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -2799,8 +2800,9 @@ ol {
 }
 
 
-.carousel-item {
-  height: 70vh;
+.carousel-item {				
+
+  height: 90vh;
   min-height: 350px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -3166,8 +3168,8 @@ height:100%;*/
     }
 
  .socials{
- 	width: 30px;
- 	height: 30px;
+ 	width: 20px;
+ 	height: 20px;
  }
 
 
@@ -3218,3 +3220,34 @@ height:100%;*/
 	display: none;
 }
 }
+
+
+.mysocials{
+	margin: 20px 0px 0px 0px ;
+}
+
+.gallery{
+	color: #003154;
+	text-align: center;
+	padding: 50px 0;
+	font-weight: bolder;
+
+}
+
+.car-text {
+	font-weight: bolder;
+	font-size: 24px;
+	color: #003154;
+}
+
+.no-boarder{
+	border: none;	
+}
+.my-card-title{
+	color: #fff;
+}
+
+
+
+
+	
