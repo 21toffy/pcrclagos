@@ -3206,3 +3206,15 @@ height:100%;*/
 .marg{
 	margin: 70px;
 }
+
+#display{
+	display: block;
+}
+
+
+@media (max-width: 640px)
+{
+	#display{
+	display: none;
+}
+}
